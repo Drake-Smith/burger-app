@@ -2,7 +2,7 @@
 <h3 class="title">It's good for you!*</h3>
 
 <div class="row">
-	<div class="col-lg-4">
+	<div class="col-md-4">
 		<h2 class="header">Burgers To Eat</h2>
 		<ul>
 			{{#each burgers}}
@@ -21,20 +21,19 @@
 		</ul>
 	</div>
 
-	<div class="col-lg-4">
+	<div class="col-md-4">
 		<img src="/assets/img/burger.png" alt="burger" height="200px" width="200px">
 
 		<h2 class="header">Add A Burger</h2>
 			<form class="create-update-form" action="index/insertOne" method="POST">
 				<div class="form-group">
-					<label for="burgername">Burger</label>
 					<input type="text" id="ca" name="burger_name">
 				</div>
 				<button type="submit">Add Burger</button>
 			</form>
 	</div>
 
-	<div class="col-lg-4">
+	<div class="col-md-4">
 		<h2 class="header">Devoured Burgers</h2>
 		<ul>
 			{{#each burgers}}
